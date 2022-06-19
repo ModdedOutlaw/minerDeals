@@ -2,10 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Merriweather Sans', sans-serif;
+
   font-family: 'Mulish', sans-serif;
 }
 
+a{
+  font-family: 'Merriweather Sans', sans-serif;
+  text-decoration: none;
+  color:rgb(255, 65, 198, 1);
+}
+
+a:hover{
+  font-family: 'Merriweather Sans', sans-serif;
+  color:white;
+  text-decoration:underline;
+  
+}
 
 body {
   background-color: rgb(33, 0, 81, 0.8);
