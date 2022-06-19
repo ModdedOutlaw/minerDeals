@@ -126,8 +126,6 @@ canvas {
   color: rgb(255, 65, 198, 1);
   padding: 0.3em;
   border-right: 2px solid rgb(255, 65, 198, 1);
-
-
 }
 
 #discord-name {
@@ -155,129 +153,16 @@ canvas {
   background-color: rgb(33, 0, 81);
 }
 
-
-
-
-
-.bodySectionMain {
-
-  border-style: solid;
-  border-radius: 0.5em;
-  border-color: black;
-
-  margin-left: 1em;
-  padding: 1em;
-  font-size: 2em;
-
-  background-color: rgb(106, 107, 108, 0.5);
-
-  width: 100%;
-
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-
-
-
-}
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-  background-color: transparent;
-  width: 250px;
-  height: 300px;
-
-  perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
-
-  display: inline-block;
-
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: transparent;
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: transparent;
+.miner-section{
+  width: 80%;
+  margin: auto;
+  padding: 0em;
+  font-weight: 600;
+  font-size: 1.4em;
   color: white;
-  transform: rotateY(180deg);
 }
 
 
-.item1 { grid-area: header; 
-  width: 100%;
-  font-family: sans-serif;
-  color: #ff41c6;
-  font-size: larger;
- 
-}
-.item3 { grid-area: main; }
 
-.item5 { grid-area: footer;
-font-family: sans-serif;
-color: #ff41c6;
-}
 
-.grid-container {
-display: grid;
-grid-template-areas:
-  'header header header header header header'
-  'main main main main main main'
-  'footer footer footer footer footer footer';
 
-padding: 5px;
-
-}
-
-h1{
-font-size: 40px;
-}
-p{
-font-family: sans-serif;
-color: #ff41c6;
-font-size: medium;
-}
-iframe{
-border: none;
-}
-.grid-container > div {
-background-color: #210051;
-text-align: center;
-padding: 5px 0;
-font-size: 10px;
-}

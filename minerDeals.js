@@ -82,7 +82,7 @@ async function getMinerDeals() {
 
 
 
-    let section = document.getElementsByClassName('item3');
+    let section = document.getElementsByClassName('miner-section');
 
     lowestPricedMinerArray.forEach(m => {
 
