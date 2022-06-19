@@ -6,9 +6,6 @@
   font-family: 'Mulish', sans-serif;
 }
 
-a {
-  color: rgb(255, 65, 198, 1);
-}
 
 body {
   background-color: rgb(33, 0, 81, 0.8);
@@ -33,7 +30,6 @@ canvas {
   width: 94%;
   background-color: rgb(33, 0, 81, 0.8);
   position: relative;
-  z-index: -1;
 
 }
 
