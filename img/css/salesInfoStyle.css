@@ -1,0 +1,27 @@
+
+body {
+	font-family: 'Mulish', sans-serif;
+	background-color:  #210051;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+    color: #06ffff;
+	text-align: center;
+}
+span{
+	background-color: #ff41c6;
+	font-size: 10vw;
+	font-weight: 700;
+
+}
+a{
+	font-family: 'Mulish', sans-serif;
+	color: #ff41c6;
+}
+
+  .copyright{
+	  margin-top: 20%;
+  }
