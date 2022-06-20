@@ -24,7 +24,7 @@ a:hover{
 
 
 body {
-  background-color: rgb(33, 0, 81, 0.8);
+ 
   font-size: 62.5%;
   height: 95vh;
 
@@ -32,12 +32,14 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-
+  
+ 
 
   background-color: rgb(33, 0, 81, 0.9);
   background-size: 90%;
  
   text-align: center;
+
   
 }
 
@@ -52,7 +54,9 @@ canvas {
   margin-right: auto;
   width: 94%;
   background-color: rgb(33, 0, 81, 0.8);
-  position: absolute;
+  position:relative;
+  
+  
 
 }
 
