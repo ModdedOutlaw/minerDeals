@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: 'Mulish', sans-serif;
 }
 
@@ -23,13 +22,21 @@ a:hover{
   color:rgb(255, 65, 198, 1);
 }
 
+
 body {
   background-color: rgb(33, 0, 81, 0.8);
   font-size: 62.5%;
   height: 95vh;
-  background: transparent url(img/uplift-world-community-logo.png) no-repeat center 50px;
+
+  background-image: url(img/uplift-world-community-logo.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+
   background-color: rgb(33, 0, 81, 0.9);
-  background-size: 80%;
+  background-size: 90%;
+ 
   text-align: center;
   
 }
