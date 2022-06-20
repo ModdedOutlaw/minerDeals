@@ -19,6 +19,10 @@ a:hover{
   
 }
 
+#currentpage{
+  color:rgb(255, 65, 198, 1);
+}
+
 body {
   background-color: rgb(33, 0, 81, 0.8);
   font-size: 62.5%;
