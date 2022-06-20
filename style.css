@@ -27,7 +27,8 @@ a:hover{
   background: url(img/uplift-world-community-logo.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  
   position: fixed;
   height: 100vh;
   width: 100vw;
