@@ -23,21 +23,30 @@ a:hover{
 }
 
 
+.img {    
+  background: url(img/uplift-world-community-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
 body {
  
   font-size: 62.5%;
   
-
+/*
   background-image: url(img/uplift-world-community-logo.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  
- 
 
-  background-color: rgb(33, 0, 81, 0.9);
+  background-position: center;
+
+
   background-size:80%;
- 
+ */
+ background-color: rgb(33, 0, 81, 0.9);
   text-align: center;
   height: 100vh;
   
@@ -54,7 +63,8 @@ canvas {
   margin-right: auto;
   width: 94%;
   background-color: rgb(33, 0, 81, 0.8);
-  position:relative;
+  transform: translateX(3%);
+  position:absolute;
   
   
 
