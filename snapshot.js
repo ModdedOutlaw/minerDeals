@@ -48,6 +48,37 @@ async function fetchOpenProposalsJSON() {
 }
 
 
+async function fetchSpaceJSON() {
+  const response = await fetch('https://hub.snapshot.org/graphql', {
+      method: 'POST',
+      body: JSON.stringify({
+        query: `
+        query {
+          space(id: "theuplift.eth") {
+            id
+            name
+            about
+            network
+            symbol
+            members
+          }
+        }`,
+        variables: {
+          type: 'post'
+        }
+      }),
+      headers: {
+          'content-type': 'application/json'
+      }
+    });
+
+    const space = await response.json();
+
+    return space;
+    
+}
+
+
 
 async function getActiveProposals(){
 
@@ -62,4 +93,15 @@ async function getActiveProposals(){
 
 }
 
+
+async function getSpaceInfo(){
+
+  await fetchSpaceJSON().then(space_info => {
+    console.log(space_info);
+      
+  });
+
+}
+
 getActiveProposals();
+getSpaceInfo();
