@@ -14,6 +14,7 @@ a{
 #link-wallet{
   color: rgb(6, 255, 255);;
 }
+
 #link-wallet:hover{
   color:white;
 }
@@ -21,9 +22,6 @@ a{
 a:hover{
 
   text-decoration: underline;
-  color:rgb(255, 65, 198);
-  
- 
   
 }
 
