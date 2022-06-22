@@ -92,19 +92,23 @@ async function getMinerDeals() {
             imageX.width = "135";
             imageX.height = "200";
             imageX.src = "img/" + m.img + ".jpg";
+            imageX.id="img-shadow";
 
-            section[0].appendChild(imageX);
-
+            //section[0].appendChild(imageX);
 
         let descriptionX = document.createElement('p');
-        descriptionX.innerHTML += '<h2>' + m.name + '</h2>' + m.ratio + ' upliftium per hour / price <br>' + m.rate + ' Upliftium per hour <br>' + m.price +
+        descriptionX.innerHTML += "<br>";
+        descriptionX.append(imageX);
+        descriptionX.innerHTML += "<br>";
+        descriptionX.id="p-description";
+        descriptionX.innerHTML += '<br><h2>' + m.name + '</h2>' + m.ratio + ' upliftium per hour / price <br>' + m.rate + ' Upliftium per hour <br>' + m.price +
             ' wax<br><a href ="https://wax.atomichub.io/market/sale/' + m.saleId +
             '">AtomicHub</a><br><hr>';
 
         section[0].appendChild(descriptionX);
 
     });
-    //console.log(section);
+
 
 
 }
