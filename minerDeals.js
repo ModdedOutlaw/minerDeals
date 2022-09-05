@@ -88,16 +88,16 @@ console.log(minerArray);
     let section = document.getElementsByClassName('miner-section');
 
     lowestPricedMinerArray.forEach(m => {
-        let imageX = document.createElement('video');
+      
 
 
-            if(m.video!= true){
-                imageX = document.createElement('img');}
+         
+               let imageX = document.createElement('img');
             imageX.width = "135";
             imageX.height = "200";
             imageX.marginwidth= "0"
             imageX.seamless = "true";
-            imageX.src = "https://atomichub-ipfs.com/ipfs/" + m.img;
+            imageX.src = "img/" + m.img +".jpg";
             imageX.id="img-shadow";
 
             //section[0].appendChild(imageX);
