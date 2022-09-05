@@ -21,6 +21,7 @@ async function getMinerDeals() {
         price: 0,
         saleId: 0,
         img: 0,
+        video: false,
         rarity: ""
     };
 
@@ -48,7 +49,7 @@ console.log(minerArray);
         miner.data.forEach((e, i) => {
 
             let m = minerArray.find(o => o.id === e.assets[0].template.template_id);
-
+            console.log(e);
             let ratio = m.rate / (e.price.amount / 100000000).toFixed(3);
 
             const lowMiner = Object.create(miners);
@@ -63,9 +64,10 @@ console.log(minerArray);
 
             if (e.assets[0].data.img != undefined) {
                 console.log("undefined");
+                lowMiner.video = false;
                 lowMiner.img = e.assets[0].data.img;
             } else {
-
+                lowMiner.video = true;
                 lowMiner.img = e.assets[0].data.video;
             }
             lowMiner.rarity = e.assets[0].data.rarity
@@ -86,13 +88,16 @@ console.log(minerArray);
     let section = document.getElementsByClassName('miner-section');
 
     lowestPricedMinerArray.forEach(m => {
+        let imageX = document.createElement('video');
 
 
-
-            let imageX = document.createElement('img');
+            if(m.video!= true){
+                imageX = document.createElement('img');}
             imageX.width = "135";
             imageX.height = "200";
-            imageX.src = "img/" + m.img + ".jpg";
+            imageX.marginwidth= "0"
+            imageX.seamless = "true";
+            imageX.src = "https://atomichub-ipfs.com/ipfs/" + m.img;
             imageX.id="img-shadow";
 
             //section[0].appendChild(imageX);
