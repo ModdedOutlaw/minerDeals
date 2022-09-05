@@ -30,6 +30,7 @@ async function getMinerDeals() {
 
     await fetchPoolsJSON().then(pools => {
 
+
         pools.data.payload.forEach((element, index) => {
 
             const miner = Object.create(miners);
@@ -41,7 +42,7 @@ async function getMinerDeals() {
 
         });
     });
-
+console.log(minerArray);
     await fetchLowestPricedMinersJSON().then(miner => {
 
         miner.data.forEach((e, i) => {
