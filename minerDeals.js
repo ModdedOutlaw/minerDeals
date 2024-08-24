@@ -1,7 +1,18 @@
 async function fetchPoolsJSON() {
-    const response = await fetch('pools.json');
-    const pools = await response.json();
-    return pools;
+    // const response = await fetch('pools.json');
+    // const pools = await response.json();
+    // console.log(pools);
+
+    const url = 'https://api.allorigins.win/get?url=' + encodeURIComponent('https://tools.theuplift.world:3033/v1/world/info/pools');
+
+    let uplift_info = await fetch(url);
+
+    let  uplift_dat = await uplift_info.json();
+    const jsonObject = JSON.parse(uplift_dat.contents)
+    //console.log(jsonObject.payload);
+
+
+    return jsonObject.payload;
 }
 
 async function fetchLowestPricedMinersJSON() {
@@ -31,8 +42,8 @@ async function getMinerDeals() {
 
     await fetchPoolsJSON().then(pools => {
 
-
-        pools.data.payload.forEach((element, index) => {
+//console.log(pools);
+        pools.forEach((element, index) => {
 
             const miner = Object.create(miners);
 
@@ -49,7 +60,6 @@ console.log(minerArray);
         miner.data.forEach((e, i) => {
 
             let m = minerArray.find(o => o.id === e.assets[0].template.template_id);
-            console.log(e);
             let ratio = m.rate / (e.price.amount / 100000000).toFixed(3);
 
             const lowMiner = Object.create(miners);
@@ -63,7 +73,7 @@ console.log(minerArray);
 
 
             if (e.assets[0].data.img != undefined) {
-                console.log("undefined");
+                console.log(e.assets[0]);
                 lowMiner.video = false;
                 lowMiner.img = e.assets[0].data.img;
             } else {
@@ -90,7 +100,7 @@ console.log(minerArray);
     lowestPricedMinerArray.forEach(m => {
       
 
-
+     
          
                let imageX = document.createElement('img');
             imageX.width = "135";
@@ -110,7 +120,7 @@ console.log(minerArray);
         descriptionX.innerHTML += '<br><h2>' + m.name + '</h2>' + m.ratio + ' upliftium per hour / price <br>' + m.rate + ' Upliftium per hour <br>' + m.price +
             ' wax<br><a href ="https://wax.atomichub.io/market/sale/' + m.saleId +
             '">AtomicHub</a><br><hr>';
-
+        
         section[0].appendChild(descriptionX);
 
     });
