@@ -95,7 +95,8 @@ canvas {
 
 .main-container {
 
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   width: 94%;
@@ -106,6 +107,7 @@ canvas {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
 
 
 .header {
@@ -244,14 +246,32 @@ canvas {
 }
 
 .miner-section{
-  width: 80%;
-  margin: auto;
-  padding: 0em;
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2em;
   font-weight: 600;
-  font-size: 1.4em;
+  font-size: 1.0em;
   color: white;
 }
 
+.miner-description{
+
+  width: 300px;
+
+
+}
+.miner-description h2{
+  font-size: 1.5em;
+  color: rgb(255, 65, 198, 1);
+}
+.miner-description img{
+  width: 50px;
+  height: auto;
+}
 .outputLeaderBoard{
   min-width: 40%;
   max-width:90%;

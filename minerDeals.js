@@ -115,6 +115,7 @@ function updateDOM() {
     let section = document.getElementsByClassName("miner-section");
     console.log(lowestPricedMinerArray);
     lowestPricedMinerArray.forEach((m) => {
+   
         let imageX = document.createElement("img");
         imageX.width = "135";
         imageX.height = "200";
@@ -125,7 +126,8 @@ function updateDOM() {
     
         //section[0].appendChild(imageX);
     
-        let descriptionX = document.createElement("p");
+        let descriptionX = document.createElement("div");
+        descriptionX.className = "miner-description";
         descriptionX.innerHTML += "<br>";
         descriptionX.append(imageX);
         descriptionX.innerHTML += "<br>";
