@@ -14,13 +14,13 @@ a{
   background-color: rgb(6, 255, 255, 0.5) !important;
   color: white;
   border: none;
+  width: 15em;
   border-radius: 5px;
   padding: 0.5em;
   font-size: 1.5em;
   cursor: pointer;
   margin: 0.5em;
   text-align: center;
-  display: inline-block;
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ tr:nth-child(even) {background-color:rgb(255, 65, 198, 0.5)}
 }
 
 #img-shadow{
-  box-shadow: 0em 0em 0.3em 0.5em rgb(255, 65, 198, 1);
+  box-shadow: 0em 0em 0.2em 0.4em rgb(255, 65, 198, 1);
 }
 #p-description{
   background-color: rgb(6, 255, 255,0.1);
@@ -115,6 +115,7 @@ canvas {
   margin: auto;
   align-content: center;
   padding: 0em;
+
   font-weight: 600;
   color: white;
 }
@@ -265,13 +266,26 @@ canvas {
 
 }
 .miner-description h2{
-  font-size: 1.5em;
+  font-size: 1.4em;
+  font-weight: 900;
+
   color: rgb(255, 65, 198, 1);
 }
 .miner-description img{
   width: 50px;
   height: auto;
 }
+.miner-description p{
+  font-size: 1.4em;
+  color: white;
+  margin-bottom: 3px;
+  margin-top: 3px;
+} 
+.miner-description a{
+  font-size: 1.4em;
+  color: rgb(6, 255, 255);
+  text-decoration: none;
+} 
 .outputLeaderBoard{
   min-width: 40%;
   max-width:90%;

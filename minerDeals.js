@@ -135,13 +135,13 @@ function updateDOM() {
         descriptionX.innerHTML +=
           "<br><h2>" +
           m.name +
-          "</h2>" +
+          "</h2><p>" +
           m.ratio +
-          " upliftium per hour / price <br>" +
+          " Upliftium per hour / price <br>" +
           m.rate +
           " Upliftium per hour <br>" +
           m.price +
-          ' wax<br><a href ="https://wax.atomichub.io/market/sale/' +
+          ' wax</p><a href ="https://wax.atomichub.io/market/sale/' +
           m.saleId +
           '">AtomicHub</a><br><hr>';
     
